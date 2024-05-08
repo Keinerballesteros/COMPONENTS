@@ -2,10 +2,12 @@
 import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import ButtonTwo from '../components/ButtonTwo.astro';
+import Counter from '../components/vue/Counter.vue';
 ---
 
 <Layout title="Welcome">
-	
+	<Counter client:load/>
+	<!--
 		<Button text="Aceptar"></Button>
 		<Button text="Permitir"></Button>
 		<Button text="Cancelar" isRounded></Button>
@@ -13,9 +15,10 @@ import ButtonTwo from '../components/ButtonTwo.astro';
 		<ButtonTwo>
 			<span slot="text">
 			Este es el button
-		</span>
-		<span slot="icon">X</span>
+			</span>
+		<span slot="icon">X</span>   
 		</ButtonTwo>
+	-->
 </Layout>
 
 
