@@ -3,10 +3,14 @@ import Layout from '../layouts/Layout.astro';
 import Button from '../components/Button.astro';
 import ButtonTwo from '../components/ButtonTwo.astro';
 import Counter from '../components/vue/Counter.vue';
+import Directives from '../components/vue/Directives.vue';
+import TODO from "../components/vue/TODO.vue";
 ---
 
 <Layout title="Welcome">
 	<Counter client:load/>
+	<!--<Directives client:load/> -->
+	<TODO client:load/>
 	<!--
 		<Button text="Aceptar"></Button>
 		<Button text="Permitir"></Button>
