@@ -5,7 +5,7 @@ let msg = ref('Soy un tooltip')
 let checked = ref(false)
 
 let data = ["hola", "mundo", "cruel"]
-let filtered = data.filter((word)=> word.includes('o'))
+let filtered = data.filter((word)=> word.includes('e'))
 </script>
 
 <template>

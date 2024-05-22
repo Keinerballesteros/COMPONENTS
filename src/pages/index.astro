@@ -5,13 +5,17 @@ import ButtonTwo from '../components/ButtonTwo.astro';
 import Counter from '../components/vue/Counter.vue';
 import Directives from '../components/vue/Directives.vue';
 import TODO from "../components/vue/TODO.vue";
+import Fondos from '../components/vue/fondos.vue';
+import Parcial from '../components/vue/Parcial.vue'
+import Text from '../components/vue/Text.vue';
 ---
 
 <Layout title="Welcome">
-	<Counter client:load/>
-	<!--<Directives client:load/> -->
-	<TODO client:load/>
 	<!--
+		<Directives client:load/> 
+	<Counter client:load/>
+	<TODO client:load/>
+	
 		<Button text="Aceptar"></Button>
 		<Button text="Permitir"></Button>
 		<Button text="Cancelar" isRounded></Button>
@@ -22,7 +26,10 @@ import TODO from "../components/vue/TODO.vue";
 			</span>
 		<span slot="icon">X</span>   
 		</ButtonTwo>
-	-->
+	
+	<Fondos /> --->
+	<Parcial titulo="title" conteudo="mamksak kanknndnans" client:load/> 
+	<Text client:load title="texting"/> 
 </Layout>
 
 
