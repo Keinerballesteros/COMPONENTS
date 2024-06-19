@@ -8,13 +8,17 @@ import TODO from "../components/vue/TODO.vue";
 import Fondos from '../components/vue/fondos.vue';
 import Parcial from '../components/vue/Parcial.vue'
 import Text from '../components/vue/Text.vue';
+import Json from '../components/vue/Json.vue';
+
+import Cards from '../components/vue/Cards.vue';
 ---
 
 <Layout title="Welcome">
 	<!--
+		<Cards />
+		<TODO client:load/>
 		<Directives client:load/> 
 	<Counter client:load/>
-	<TODO client:load/>
 	
 		<Button text="Aceptar"></Button>
 		<Button text="Permitir"></Button>
@@ -27,9 +31,13 @@ import Text from '../components/vue/Text.vue';
 		<span slot="icon">X</span>   
 		</ButtonTwo>
 	
-	<Fondos /> --->
+	<Fondos /> 
 	<Parcial titulo="title" conteudo="mamksak kanknndnans" client:load/> 
-	<Text client:load title="texting"/> 
+	<Text client:load title="texting"/>
+	<Json client:load/>
+	 --->
+	 <Cards client:load/>
+	 <Cards client:load/>
 </Layout>
 
 

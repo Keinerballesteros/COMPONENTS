@@ -24,8 +24,8 @@ function view(){
 </script>
 <template>
 
-    <div>
+    <div class="mx-auto">
         <button @click="view()" class="bg-slate-600 w-full">Click</button>
-        <p v-if="value">{{ title }}</p>
+        <p v-show="value">{{ title }}</p>
     </div>
 </template>
